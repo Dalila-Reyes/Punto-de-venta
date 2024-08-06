@@ -30,7 +30,9 @@ const ProductCard = ({ product }) => {
           <Link to={`/producto/${product.id}`}>
             <Button variant="primary">Ver detalles</Button>
           </Link>
-          <Button variant="success">Comprar</Button>
+          <Link to={`/cliente/${product.id}`}>
+            <Button variant="success">Comprar</Button>
+          </Link>
         </div>
       </Card.Body>
     </Card>
